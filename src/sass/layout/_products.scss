@@ -271,8 +271,6 @@ body {
   background-size: cover;
   background-position: center;
 
-  //   background-image: url('../images/products/mobile/milkshakes-mobile.png');
-
   @media screen and (max-width: 767px) {
     width: 249px;
     height: 252px;
@@ -384,7 +382,7 @@ body {
   margin: 0 auto;
   border: transparent;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
   cursor: pointer;
   line-height: 0;
 
@@ -396,12 +394,12 @@ body {
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: var(--button-gray);
   }
 }
 
 .products__btn-icon {
   width: 15px;
   height: 15px;
-  fill: #d41443;
+  fill: var(--accent-color);
 }
