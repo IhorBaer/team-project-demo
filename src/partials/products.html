@@ -7,14 +7,61 @@
         <div class="products__container products__container--color-ice-cream">
           <h3 class="products__title products__text--margin">ice cream</h3>
           <p class="products__text products__text--margin">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et. dolore magna aliqua facilisis.
+            To pamper yourself with delicious ice cream, just keep a bag of frozen avocados and
+            bananas in the freezer. And strawberries. The preparation of such ice cream takes no
+            more than three minutes.
           </p>
-          <button class="products__btn" type="button" title="open recipe">
+          <button class="products__btn" type="button" title="open recipe" data-menu-ice-cream-open>
             <svg class="products__btn-icon">
               <use href="./images/icons.svg#arrow-right"></use>
             </svg>
           </button>
+          <!-- recipe ice cream start -->
+          <div class="recipe recipe__ice-cream" data-menu-ice-cream>
+            <div class="recipe__container">
+              <h3 class="recipe__title">Быстрое мороженое</h3>
+              <p class="recipe__lable">ингредиенты</p>
+              <ul class="recipe-ingredient">
+                <li class="recipe-ingredient__item">2 спелых авокадо</li>
+                <li class="recipe-ingredient__item">3 банана</li>
+                <li class="recipe-ingredient__item">1–2 ст. л. сока лимона или лайма</li>
+                <li class="recipe-ingredient__item">150 г клубники</li>
+                <li class="recipe-ingredient__item">2–3 ст. л. меда или кленового сиропа</li>
+              </ul>
+              <p class="recipe__lable">рецепт приготовления</p>
+
+              <ul class="recipe-instructions">
+                <li class="recipe-instructions__item">
+                  <b>1.</b> Очистите авокадо, удалите косточку, разрежьте на 6–8 кусочков и положите
+                  в пакет.
+                </li>
+                <li class="recipe-instructions__item">
+                  <b>2.</b> Бананы очистите и нарежьте крупными кусочками, добавьте в пакет с
+                  авокадо. Плотно завяжите пакет и уберите в морозильник на 2 ч.
+                </li>
+                <li class="recipe-instructions__item">
+                  <b>3.</b> Замороженные бананы и авокадо положите в чашу кухонного комбайна и
+                  измельчите до однородности. Добавьте лимонный сок и мед по вкусу и перемешивайте,
+                  пока масса не превратится в мороженое.
+                </li>
+                <li class="recipe-instructions__item">
+                  <b>4.</b> Нарежьте клубнику маленькими кусочками и смешайте с мороженым. Подавайте
+                  сразу же.
+                </li>
+              </ul>
+            </div>
+            <button
+              class="products__btn"
+              type="button"
+              title="close recipe"
+              data-menu-ice-cream-close
+            >
+              <svg class="products__btn-icon">
+                <use href="./images/icons.svg#arrow-left"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- recipe ice cream finish -->
         </div>
       </li>
 
@@ -22,14 +69,54 @@
         <div class="products__container products__container--color-ice-coffee">
           <h3 class="products__title products__text--margin">ice coffee</h3>
           <p class="products__text products__text--margin">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et. dolore magna aliqua facilisis.
+            Coffee can be not only delicious, but also terribly useful if you add vitamins in the
+            form of fresh berries and fruits to it. This coffee drink is made with espresso, banana,
+            fresh raspberries and pumpkin juice.
           </p>
-          <button class="products__btn" type="button" title="open recipe">
+          <button class="products__btn" type="button" title="open recipe" data-menu-ice-coffee-open>
             <svg class="products__btn-icon">
               <use href="./images/icons.svg#arrow-right"></use>
             </svg>
           </button>
+          <!-- recipe ice coffee start -->
+          <div class="recipe recipe__ice-coffee" data-menu-ice-coffee>
+            <div>
+              <h3 class="recipe__title">Очень полезный кофе</h3>
+              <p class="recipe__lable">ингредиенты</p>
+              <ul class="recipe-ingredient">
+                <li class="recipe-ingredient__item">эспрессо – 1 чашка</li>
+                <li class="recipe-ingredient__item">банан – ½</li>
+                <li class="recipe-ingredient__item">пюре/сок тыквы – 100 г</li>
+                <li class="recipe-ingredient__item">колотый лёд – 100 г</li>
+                <li class="recipe-ingredient__item">свежая малина – 100 г</li>
+              </ul>
+              <p class="recipe__lable">рецепт приготовления</p>
+              <ul class="recipe-instructions">
+                <li class="recipe-instructions__item"><b>1.</b> Приготовить чашку эспрессо.</li>
+                <li class="recipe-instructions__item">
+                  <b>2.</b> Все остальные компоненты последовательно смешать в блендере с колотым
+                  льдом до однородной массы.
+                </li>
+                <li class="recipe-instructions__item">
+                  <b>3.</b> Добавить эспрессо в приготовленную смесь.
+                </li>
+                <li class="recipe-instructions__item">
+                  <b>4.</b> Разлить напиток по бокалам. Украсить любимым печеньем.
+                </li>
+              </ul>
+            </div>
+            <button
+              class="products__btn"
+              type="button"
+              title="close recipe"
+              data-menu-ice-coffee-close
+            >
+              <svg class="products__btn-icon">
+                <use href="./images/icons.svg#arrow-left"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- recipe ice coffee finish -->
         </div>
       </li>
 
@@ -37,16 +124,105 @@
         <div class="products__container products__container--color-milkshakes">
           <h3 class="products__title products__text--margin">milkshakes</h3>
           <p class="products__text products__text--margin">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et. dolore magna aliqua facilisis.
+            What could be better than a milkshake on a hot summer day, at five o'clock, when lunch
+            has already been forgotten, it is far from supper, do you want something refreshing and
+            sweet at the same time?
           </p>
-          <button class="products__btn" type="button" title="open recipe">
+          <button class="products__btn" type="button" title="open recipe" data-menu-milkshakes-open>
             <svg class="products__btn-icon">
               <use href="./images/icons.svg#arrow-right"></use>
             </svg>
           </button>
+
+          <!-- recipe milkshakes start -->
+          <div class="recipe recipe__milkshakes" data-menu-milkshakes>
+            <div>
+              <h3 class="recipe__title">Шоколадный молочный коктейль</h3>
+              <p class="recipe__lable">ингредиенты</p>
+              <ul class="recipe-ingredient">
+                <li class="recipe-ingredient__item">300 мл молока</li>
+                <li class="recipe-ingredient__item">80 г темного шоколада</li>
+                <li class="recipe-ingredient__item">140 г ванильного или шоколадного мороженого</li>
+                <li class="recipe-ingredient__item">какао-порошок для посыпки</li>
+              </ul>
+              <p class="recipe__lable">рецепт приготовления</p>
+              <ul class="recipe-instructions">
+                <li class="recipe-instructions__item">
+                  <b>1.</b> Разломайте шоколад на мелкие кусочки, залейте небольшим количеством
+                  кипящего молока и дайте растаять. Остудите.
+                </li>
+                <li class="recipe-instructions__item">
+                  <b>2.</b> Взбейте все ингредиенты в блендере, при желании добавив горсть льда.
+                  Налейте в охлажденные высокие стаканы, посыпьте какао-порошком через ситечко и
+                  подавайте с трубочками.
+                </li>
+              </ul>
+            </div>
+            <button
+              class="products__btn"
+              type="button"
+              title="close recipe"
+              data-menu-milkshakes-close
+            >
+              <svg class="products__btn-icon">
+                <use href="./images/icons.svg#arrow-left"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- recipe milkshakes finish -->
         </div>
       </li>
     </ul>
   </div>
 </section>
+
+<script>
+  (() => {
+    const refs = {
+      openMenuBtn: document.querySelector('[data-menu-ice-cream-open]'),
+      closeMenuBtn: document.querySelector('[data-menu-ice-cream-close]'),
+      menu: document.querySelector('[data-menu-ice-cream]'),
+    };
+
+    refs.openMenuBtn.addEventListener('click', toggleModal);
+    refs.closeMenuBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+      refs.menu.classList.toggle('is-open');
+    }
+  })();
+</script>
+
+<script>
+  (() => {
+    const refs = {
+      openMenuBtn: document.querySelector('[data-menu-ice-coffee-open]'),
+      closeMenuBtn: document.querySelector('[data-menu-ice-coffee-close]'),
+      menu: document.querySelector('[data-menu-ice-coffee]'),
+    };
+
+    refs.openMenuBtn.addEventListener('click', toggleModal);
+    refs.closeMenuBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+      refs.menu.classList.toggle('is-open');
+    }
+  })();
+</script>
+
+<script>
+  (() => {
+    const refs = {
+      openMenuBtn: document.querySelector('[data-menu-milkshakes-open]'),
+      closeMenuBtn: document.querySelector('[data-menu-milkshakes-close]'),
+      menu: document.querySelector('[data-menu-milkshakes]'),
+    };
+
+    refs.openMenuBtn.addEventListener('click', toggleModal);
+    refs.closeMenuBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+      refs.menu.classList.toggle('is-open');
+    }
+  })();
+</script>

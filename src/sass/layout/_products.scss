@@ -148,6 +148,8 @@ body {
 
 .products__item {
   background-color: aqua;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
   position: relative;
 
   @media screen and (max-width: 767px) {
@@ -177,6 +179,7 @@ body {
   content: '';
   display: block;
   position: absolute;
+  z-index: 33;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -220,6 +223,7 @@ body {
   content: '';
   display: block;
   position: absolute;
+  z-index: 34;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -263,6 +267,7 @@ body {
   content: '';
   display: block;
   position: absolute;
+  z-index: 35;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -305,6 +310,10 @@ body {
 .products__container {
   padding: 160px 40px 40px;
   border-radius: 24px;
+
+  position: relative;
+  overflow: hidden;
+  // z-index: 32;
 
   @media screen and (min-width: 768px) {
     padding: 150px 15px 40px;
@@ -402,4 +411,79 @@ body {
   width: 15px;
   height: 15px;
   fill: var(--accent-color);
+}
+
+// recipe ice cream
+.recipe {
+  width: 100%;
+  height: 95%;
+  padding: 20px 20px 40px;
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+
+  position: absolute;
+  z-index: 37;
+
+  bottom: 0;
+  right: 0;
+
+  transform: translateX(100%);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 13px;
+  }
+}
+
+.recipe__ice-cream {
+  background-color: #fcd2dd;
+}
+
+.recipe__ice-coffee {
+  background-color: #fce9ce;
+}
+
+.recipe__milkshakes {
+  background-color: #e4fac8;
+}
+
+.recipe__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+}
+
+.recipe__lable {
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.recipe-ingredient {
+  margin-bottom: 10px;
+}
+
+.recipe-ingredient__item {
+  border-bottom: 1px solid #907e82;
+  padding: 2px 0 4px;
+}
+
+.recipe-instructions__item {
+  margin-bottom: 5px;
 }
