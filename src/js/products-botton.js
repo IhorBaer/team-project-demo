@@ -10,7 +10,7 @@
     refs.closeMenuBtn.addEventListener('click', toggleModal);
 
     function toggleModal() {
-      refs.menu.classList.toggle('is-open');
+      refs.menu.classList.toggle('is-open-recipe');
     }
   })();
 
@@ -27,7 +27,7 @@
     refs.closeMenuBtn.addEventListener('click', toggleModal);
 
     function toggleModal() {
-      refs.menu.classList.toggle('is-open');
+      refs.menu.classList.toggle('is-open-recipe');
     }
   })();
 
@@ -44,6 +44,6 @@
     refs.closeMenuBtn.addEventListener('click', toggleModal);
 
     function toggleModal() {
-      refs.menu.classList.toggle('is-open');
+      refs.menu.classList.toggle('is-open-recipe');
     }
   })();
