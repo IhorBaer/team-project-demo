@@ -1,0 +1,106 @@
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 113px;
+  background-color: var(--background-section);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (max-width: 767px) {
+    background: linear-gradient(
+      to bottom,
+      var(--primary-white-color) 172px,
+      var(--background-section) 172px
+    );
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 50px;
+    padding-bottom: 165px;
+
+    background: linear-gradient(
+      to bottom,
+      var(--primary-white-color) 197px,
+      var(--background-section) 197px
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 50px;
+    padding-bottom: 165px;
+
+    @media screen and (min-device-pixel-ratio: 1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: url(../images/contacts/bg-contacts.png),
+        linear-gradient(
+          to bottom,
+          var(--primary-white-color) 230px,
+          var(--background-section) 230px
+        );
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/contacts/bg-contacts@2x.png'),
+        linear-gradient(
+          to bottom,
+          var(--primary-white-color) 230px,
+          var(--background-section) 230px
+        );
+    }
+  }
+}
+.contacts-list {
+}
+
+.contacts-list__item {
+}
+.contacts-list__card-city {
+}
+
+.place-card {
+}
+.title-card {
+}
+.text-card {
+}
+
+.contacts-list__card-time {
+}
+.day-card {
+}
+.time-card {
+}
+
+.contacts-list__card-telephone {
+}
+.contacts-number-card {
+}
+
+.contacts-mail-card {
+}
+
+.contacts-button-list {
+}
+
+.contacts-button-list__item {
+}
+
+.contacts-button {
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  width: 161px;
+  padding: 0 17px;
+  height: 44px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.contacts-button-icon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  margin-top: 2px;
+}
