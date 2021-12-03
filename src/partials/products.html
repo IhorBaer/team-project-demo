@@ -13,7 +13,7 @@
           </p>
           <button class="products__btn" type="button" title="open recipe" data-menu-ice-cream-open>
             <svg class="products__btn-icon">
-              <use href="./images/icons.svg#arrow-right"></use>
+              <use href="./images/svg/icons.svg#arrow-right"></use>
             </svg>
           </button>
           <!-- recipe ice cream start -->
@@ -57,7 +57,7 @@
               data-menu-ice-cream-close
             >
               <svg class="products__btn-icon">
-                <use href="./images/icons.svg#arrow-left"></use>
+                <use href="./images/svg/icons.svg#arrow-left"></use>
               </svg>
             </button>
           </div>
@@ -75,7 +75,7 @@
           </p>
           <button class="products__btn" type="button" title="open recipe" data-menu-ice-coffee-open>
             <svg class="products__btn-icon">
-              <use href="./images/icons.svg#arrow-right"></use>
+              <use href="./images/svg/icons.svg#arrow-right"></use>
             </svg>
           </button>
           <!-- recipe ice coffee start -->
@@ -112,7 +112,7 @@
               data-menu-ice-coffee-close
             >
               <svg class="products__btn-icon">
-                <use href="./images/icons.svg#arrow-left"></use>
+                <use href="./images/svg/icons.svg#arrow-left"></use>
               </svg>
             </button>
           </div>
@@ -130,7 +130,7 @@
           </p>
           <button class="products__btn" type="button" title="open recipe" data-menu-milkshakes-open>
             <svg class="products__btn-icon">
-              <use href="./images/icons.svg#arrow-right"></use>
+              <use href="./images/svg/icons.svg#arrow-right"></use>
             </svg>
           </button>
 
@@ -165,7 +165,7 @@
               data-menu-milkshakes-close
             >
               <svg class="products__btn-icon">
-                <use href="./images/icons.svg#arrow-left"></use>
+                <use href="./images/svg/icons.svg#arrow-left"></use>
               </svg>
             </button>
           </div>
@@ -175,54 +175,3 @@
     </ul>
   </div>
 </section>
-
-<script>
-  (() => {
-    const refs = {
-      openMenuBtn: document.querySelector('[data-menu-ice-cream-open]'),
-      closeMenuBtn: document.querySelector('[data-menu-ice-cream-close]'),
-      menu: document.querySelector('[data-menu-ice-cream]'),
-    };
-
-    refs.openMenuBtn.addEventListener('click', toggleModal);
-    refs.closeMenuBtn.addEventListener('click', toggleModal);
-
-    function toggleModal() {
-      refs.menu.classList.toggle('is-open');
-    }
-  })();
-</script>
-
-<script>
-  (() => {
-    const refs = {
-      openMenuBtn: document.querySelector('[data-menu-ice-coffee-open]'),
-      closeMenuBtn: document.querySelector('[data-menu-ice-coffee-close]'),
-      menu: document.querySelector('[data-menu-ice-coffee]'),
-    };
-
-    refs.openMenuBtn.addEventListener('click', toggleModal);
-    refs.closeMenuBtn.addEventListener('click', toggleModal);
-
-    function toggleModal() {
-      refs.menu.classList.toggle('is-open');
-    }
-  })();
-</script>
-
-<script>
-  (() => {
-    const refs = {
-      openMenuBtn: document.querySelector('[data-menu-milkshakes-open]'),
-      closeMenuBtn: document.querySelector('[data-menu-milkshakes-close]'),
-      menu: document.querySelector('[data-menu-milkshakes]'),
-    };
-
-    refs.openMenuBtn.addEventListener('click', toggleModal);
-    refs.closeMenuBtn.addEventListener('click', toggleModal);
-
-    function toggleModal() {
-      refs.menu.classList.toggle('is-open');
-    }
-  })();
-</script>
