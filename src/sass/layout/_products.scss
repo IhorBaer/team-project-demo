@@ -1,0 +1,347 @@
+// базовый сброс
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// body
+
+body {
+  font-family: var(--text-first);
+}
+
+// section
+.section-products {
+  padding-top: 120px;
+  padding-bottom: 100px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 110px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 120px;
+  }
+}
+
+// container
+.container-products {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  //   @media screen and (min-width: 480px) {
+  //     width: 480px;
+  //   }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+// main
+.section-products__label {
+  font-family: var(--text-secondary);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--background-label);
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+
+.section-products__label--margin {
+  margin-bottom: 15px;
+}
+
+.section-products__title {
+  font-family: var(--text-secondary);
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.section-products__title--margin {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
+}
+
+.products {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin: -12px;
+  }
+}
+
+.products__item {
+  background-color: aqua;
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 100%;
+    padding-top: 115px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+    margin: 10px;
+    padding-top: 105px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 72px) / 3);
+    margin: 12px;
+    padding-top: 210px;
+  }
+}
+
+.products__item--ice-cream-img::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: 767px) {
+    width: 249px;
+    height: 252px;
+    background-image: url('../images/products/mobile/ice-cream-mobile.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/mobile/ice-cream-mobile@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    background-image: url('../images/products/tablet/ice-cream-tablet.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/tablet/ice-cream-tablet@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    background-image: url('../images/products/tablet/ice-cream-tablet.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/tablet/ice-cream-tablet@2x.png');
+    }
+  }
+}
+
+.products__item--ice-coffee-img::before {
+  content: '';
+  display: block;
+  width: 249px;
+  height: 252px;
+  //   background-color: green;
+
+  background-image: url('../images/products/mobile/ice-coffee-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.products__item--milkshakes-img::before {
+  content: '';
+  display: block;
+  width: 249px;
+  height: 252px;
+  //   background-color: blue;
+
+  background-image: url('../images/products/mobile/milkshakes-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.products__container {
+  padding: 160px 40px 40px;
+  //   text-align: center;
+
+  border-radius: 24px;
+}
+
+.products__container--color-ice-cream {
+  background-color: var(--background-pink);
+}
+
+.products__container--color-ice-coffee {
+  background-color: var(--background-orange);
+}
+
+.products__container--color-milkshakes {
+  background-color: var(--background-green);
+}
+
+.products__title {
+  font-family: var(--text-secondary);
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.products__title::after {
+  content: '';
+  display: block;
+
+  background-image: url('../images/products/three-dots.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 26px;
+  height: 6px;
+  margin: 30px auto 0;
+}
+
+// .products__title--margin {
+//   margin-bottom: 30px;
+// }
+
+.products__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+.products__text--margin {
+  margin-bottom: 30px;
+}
+
+.products__btn {
+  width: 40px;
+  height: 40px;
+
+  margin: 0 auto;
+  border: transparent;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  line-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.products__btn-icon {
+  width: 15px;
+  height: 15px;
+  fill: #d41443;
+}
