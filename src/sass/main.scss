@@ -4,10 +4,10 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './components/container';
+@import './base/global';
 @import './utils/var';
 @import './utils/visually-hidden';
-@import './base/global';
-@import './components/container';
 @import './layout/header';
 @import './layout/products';
 @import './layout/about';
