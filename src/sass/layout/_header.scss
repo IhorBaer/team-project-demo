@@ -1,6 +1,5 @@
 .header {
-  display: flex;
-  align-items: center;
+  
   /* background: var(--background-pink); */
   background: transparent;
   min-height: auto;
@@ -9,7 +8,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 50;
   padding-top: 6px;
   padding-bottom: 6px;
   /* border-bottom: 1px solid var(); */
@@ -86,7 +85,7 @@
     visibility: visible;
     pointer-events: all;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       display: none;
     }  
   }
