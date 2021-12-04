@@ -1,0 +1,26 @@
+.footer {
+    background-color: var(--backgound-section);
+}
+.footer__label {
+font-family: var(--text-secondary);
+font-size: 30px;
+line-height: 1.13;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: var(--background-label);
+}
+.footer__span {
+font-size: 58px;
+line-height: 1.14;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--accent-color);
+}
+.footer__adress {
+font-family: var(--text-first);
+font-weight: bold;
+font-size: 16px;
+line-height: 1.86;
+letter-spacing: 0.02em;
+color: var(--text-color-black);
+}
