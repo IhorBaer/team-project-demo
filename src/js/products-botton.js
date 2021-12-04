@@ -10,15 +10,9 @@
     refs.closeMenuBtn.addEventListener('click', toggleModal);
 
     function toggleModal() {
-<<<<<<< Updated upstream
       refs.menu.classList.toggle('is-open-recipe');
-=======
-      refs.menu.classList.toggle('is-open');
->>>>>>> Stashed changes
     }
   })();
-
-
 
   (() => {
     const refs = {
@@ -31,15 +25,10 @@
     refs.closeMenuBtn.addEventListener('click', toggleModal);
 
     function toggleModal() {
-<<<<<<< Updated upstream
       refs.menu.classList.toggle('is-open-recipe');
-=======
-      refs.menu.classList.toggle('is-open');
->>>>>>> Stashed changes
+
     }
   })();
-
-
 
   (() => {
     const refs = {
@@ -52,10 +41,6 @@
     refs.closeMenuBtn.addEventListener('click', toggleModal);
 
     function toggleModal() {
-<<<<<<< Updated upstream
       refs.menu.classList.toggle('is-open-recipe');
-=======
-      refs.menu.classList.toggle('is-open');
->>>>>>> Stashed changes
     }
   })();
