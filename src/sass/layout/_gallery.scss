@@ -1,5 +1,11 @@
 .container_galery {
-  margin-top: -141px;
+  // margin-top: -141px;
+  background-image: linear-gradient(
+    to top,
+    var(--primary-white-color) 60%,
+    var(--background-section) 40%,
+    var(--background-section) 60%
+  );
 }
 
 .item_container {
