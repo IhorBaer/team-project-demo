@@ -1,0 +1,58 @@
+.item {
+  display: block;
+  width: 15%;
+}
+.item.w2 {
+  width: 15%;
+}
+
+.item img {
+  max-width: 100%;
+  border-radius: 25px;
+}
+
+.stamp {
+  position: absolute;
+  // background: orange;
+  // border: 4px dotted black;
+}
+.stamp1 {
+  left: 0%;
+  top: 0px;
+  width: 30%;
+  height: 70px;
+}
+.stamp2 {
+  right: 30%;
+  top: 0px;
+  width: 35%;
+  height: 1px;
+}
+
+.stamp3 {
+  right: 70%;
+  top: 0px;
+  width: 30%;
+  height: 70px;
+}
+
+.stamp4 {
+  right: 0%;
+  top: 0px;
+  width: 15%;
+  height: 30px;
+}
+
+.stamp5 {
+  right: 70%;
+  top: 50px;
+  width: 10%;
+  height: 30px;
+}
+
+.stamp6 {
+  right: 0%;
+  top: 0px;
+  width: 15%;
+  height: 30px;
+}
