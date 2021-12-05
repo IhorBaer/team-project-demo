@@ -1,0 +1,144 @@
+.container_galery {
+  // margin-top: -141px;
+  background-image: linear-gradient(
+    to top,
+    var(--primary-white-color) 60%,
+    var(--background-section) 40%,
+    var(--background-section) 60%
+  );
+}
+
+.item_container {
+  margin-left: 5%;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 15%;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-left: 20%;
+  }
+}
+
+.item {
+  display: block;
+  width: 15%;
+
+  @media screen and (max-width: 768px) {
+    width: 17%;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 25%;
+  }
+}
+
+.item.w2 {
+  width: 15%;
+}
+
+.item img {
+  max-width: 100%;
+  border-radius: 25px;
+}
+
+.stamp {
+  position: absolute;
+  // background: orange;
+  // border: 4px dotted black;
+}
+
+.stamp1 {
+  left: 0%;
+  top: 0;
+  width: 32%;
+  height: 70px;
+
+  @media screen and (max-width: 1200px) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 17%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 25%;
+    height: 80px;
+  }
+}
+
+.stamp2 {
+  right: 30%;
+  top: 0;
+  width: 35%;
+  height: 1px;
+
+  @media screen and (max-width: 768px) {
+    width: 20%;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 30%;
+  }
+}
+
+.stamp3 {
+  right: 70%;
+  top: 0;
+  width: 30%;
+  height: 70px;
+
+  @media screen and (max-width: 1200px) {
+    width: 15%;
+    height: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 12%;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 0;
+    height: 0;
+  }
+}
+
+.stamp4 {
+  right: 0%;
+  top: 0;
+  width: 15%;
+  height: 30px;
+
+  @media screen and (max-width: 768px) {
+    width: 40%;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 25%;
+    height: 50px;
+  }
+}
+
+.stamp5 {
+  right: 0%;
+  top: 0;
+  width: 15%;
+  height: 30px;
+
+  @media screen and (max-width: 768px) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: 320px) {
+    height: 1px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 20%;
+    height: 0;
+  }
+}
