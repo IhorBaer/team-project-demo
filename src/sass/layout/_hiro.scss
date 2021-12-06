@@ -11,16 +11,17 @@
     padding-bottom: 160px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 
     @media screen and (min-width: 768px) {
-      padding-top: 156px;
+      padding-top: 94px;
       padding-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 0;
-    }
+      padding-top: 156px;
+      
+    } 
 }
 
 .hero__container--left {
@@ -33,37 +34,100 @@
     }
 }
 
-.left__part {
+.left__description {
     display: none;
 
-     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
        display: flex;
-     }
+       flex-direction: column;
+       margin-left: 120px;
+       margin-bottom: 34px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 56px;
+    }
 }
 
+.milk-img {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      bottom: 34px;
+      left: 28px;
+      width: 124px;
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+      bottom: 45px;
+      left: 77px;
+      width: 188px;
+      
+    }
+}
 .ice-cream__pic {
     position: absolute;
     bottom: 0;
     right: 32px;
     z-index: 8;
+    width: 177px;
+
+     &::after {
+       content: '';
+       position: absolute;
+       width: 346px;
+       height: 344px;
+       background-color: var(--background-label);
+       z-index: -3;
+       top: -9px;
+       right: -94px;
+       border-radius: 50%;
+     
+
+       /* @media screen and (min-width: 1200px) {
+         width: 30px;
+         height: 30px;
+         top: -14px;
+         right: -10px;
+       } */
+
+
+     }
+    
 
     @media screen and (min-width: 768px) {
         right: 247px;
+        width: 143px;
+        
     }
 
     @media screen and (min-width: 1200px) {
       right: 450px;
+      width: 236px;
+      
     }
 }
 
-.hero__container--right {
+.girl-img {
     display: none;
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 34px;
+        width: 168px;
+        z-index: 10;
     }
+
+    @media screen and (min-width: 1200px) {
+        right: 109px;
+        width: 293px;
+    }
+    
 }
 
 .hero-title {
@@ -77,6 +141,16 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--accent-color);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 25px;
+    }
+
+
 }
 
 .hero-title__part {
@@ -93,6 +167,19 @@
 .btn-colection {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 25px;
+    }
+}
+.btn-colection__item {
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
 }
 
 .btn-pre-hero {
@@ -112,19 +199,166 @@
     color: var(--accent-color);
 }
 
-/* .left__part--description {
-
-} */
-
-.left__part--text {
+.left__description--text {
     width: 200px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.42;
-    
     color: var(--primary-white-color);
+    margin-bottom: 6px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+    }
+}
+
+.left__description--btn {
+    width: 26px;
+    height: 26px;
+    border: transparent;
+    border-radius: 50%;
+    background-color: var(--primary-white-color);
+    cursor: pointer;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover,
+    &:focus {
+      background-color: var(--button-gray);
+    }
+}
+
+.left__description__btn-icon {
+    width: 10px;
+    height: 10px;
+    fill: var(--accent-color);
+}
+
+.right__description {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+} 
+
+.right__description--item {
+    display: flex;
+    flex-direction: column;
+    
+    &:not(:last-child) {
+        margin-bottom: 14px;
+
+        @media screen and (min-width: 1200px) {
+          margin-bottom: 18px;
+        }
+    }
+}
+
+.text__16 {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: var(--primary-white-color);
+      z-index: -2;
+      top: 0;
+      right: -5px;
+      border-radius: 50%;
+
+      @media screen and (min-width: 1200px) {
+        width: 30px;
+        height: 30px;
+        top: -14px;
+        right: -10px;
+      }
+
+
+    }
+
+    color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 46px;
+      line-height: 0.86;
+    }
+}
+
+.text__23 {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+     &::after {
+       content: '';
+       position: absolute;
+       width: 16px;
+       height: 16px;
+       background-color: var(--primary-white-color);
+       z-index: -2;
+       top: 0;
+       right: -5px;
+       border-radius: 50%;
+
+       @media screen and (min-width: 1200px) {
+         width: 30px;
+         height: 30px;
+         top: -14px;
+         right: -10px;
+       }
+
+
+     }
+
+    color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+        line-height: 0.86;
+    }
+}
+
+.text__pre {
+    display: inline-block;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: var(--primary-white-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 18px;
+      
+    }
 }
 
 
