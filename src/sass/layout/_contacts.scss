@@ -13,7 +13,7 @@
     );
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 50px;
     padding-bottom: 165px;
     background: linear-gradient(
@@ -23,7 +23,7 @@
     );
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 50px;
     padding-bottom: 165px;
 
@@ -51,7 +51,7 @@
     flex-direction: row;
     margin-left: -20px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-left: -30px;
   }
 }
@@ -71,7 +71,6 @@
     margin-bottom: 0;
   }
   @media screen and (min-width: 768px) {
-    
     margin-left: 20px;
     margin-bottom: 0;
     flex-basis: calc((100% - 3 * 20px) / 3);
@@ -79,7 +78,7 @@
     line-height: 1.6;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     max-width: 330px;
     margin-left: 30px;
     flex-basis: calc((100% - 3 * 30px) / 3);
@@ -97,7 +96,7 @@
   @media screen and (min-width: 768px) {
     margin-top: 14px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 10px;
   }
 }
@@ -112,7 +111,7 @@
     @media screen and (min-width: 768px) {
       margin: 30px 0;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       margin: 32px 0;
     }
   }
@@ -134,7 +133,7 @@
     font-size: 16px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 32px;
   }
 }
@@ -159,7 +158,7 @@
     margin-top: 16px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 15px;
   }
 }
@@ -181,7 +180,8 @@
 .contacts-number-card,
 .contacts-mail-card {
   color: var(--text-color-gray);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: var(--accent-color);
   }
 }
@@ -205,7 +205,7 @@
     margin-top: 81px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 86px;
   }
 }
@@ -228,9 +228,8 @@
   padding: 0 17px;
   height: 44px;
   border: none;
-  
-  &:hover {
 
+  &:hover {
   }
 }
 
@@ -241,16 +240,13 @@
   margin-left: 8px;
   margin-top: 2px;
   fill: currentColor;
-  
 }
 
 .contacts-button__map {
-background-color: var(--accent-color);
-color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 .contacts-button__franchise {
   background-color: var(--primary-white-color);
-color: var(--accent-color);
-
+  color: var(--accent-color);
 }
-
