@@ -3,9 +3,9 @@ itemSelector: '.grid-item';
 // stamp elements
   stamp: '.stamp';
 
-var $container = $('#container');
+// var $container = $('#container');
 // Инициализация Масонри, после загрузки изображений
-$container.imagesLoaded( function() {
-  $container.masonry();
-});
+// $container.imagesLoaded( function() {
+//   $container.masonry();
+// });
 
