@@ -41,40 +41,47 @@
   }
 }
 .contacts-list {
-  outline: 2px solid firebrick;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: -50px;
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    margin-left: -20px;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-
+    margin-left: -30px;
   }
 }
 
 .contacts-list__item {
-  width: 220px;
-  margin: 0 auto;
+  max-width: 220px;
+  margin-left: 50px;
+  margin-bottom: 20px;
   padding: 43px 20px;
+
   font-size: 12px;
   line-height: 1.86;
   background: var(--primary-white-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-
+  &:last-child {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 768px) {
-  
-    
+    width: 330px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    flex-basis: calc((100% - 3 * 20px) / 3);
     font-size: 14px;
     line-height: 1.6;
   }
-  @media screen and (min-width: 1200px) {
-    width: 330px;
-    
-    
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
     font-size: 16px;
     line-height: 1.83;
     letter-spacing: 0.04em;
@@ -173,28 +180,57 @@
 .contacts-number-card,
 .contacts-mail-card {
   color: var(--text-color-gray);
+  &:hover, &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contacts-mail-card {
 }
 
+// BUTTONS
 .contacts-button-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 54px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 81px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 86px;
+  }
 }
 
-.contacts-button-list__item {
+.contacts-button-list__item + .contacts-button-list__item {
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 15px;
+  }
 }
 
 .contacts-button {
+  display: flex;
   font-size: 16px;
   justify-content: center;
   align-items: center;
   border-radius: 22px;
-  width: 161px;
+  min-width: 161px;
   padding: 0 17px;
   height: 44px;
-  margin: 0 auto;
-  display: flex;
+  border: none;
+  
+  &:hover {
+
+  }
 }
 
 .contacts-button-icon {
@@ -203,4 +239,17 @@
   height: 12px;
   margin-left: 8px;
   margin-top: 2px;
+  fill: currentColor;
+  
 }
+
+.contacts-button__map {
+background-color: var(--accent-color);
+color: var(--primary-white-color);
+}
+.contacts-button__franchise {
+  background-color: var(--primary-white-color);
+color: var(--accent-color);
+
+}
+
