@@ -24,9 +24,7 @@
   }
 }
 
-
 .advantages-list__item {
-
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 40px;
@@ -44,8 +42,6 @@
     margin-left: 30px;
     margin-bottom: 30px;
   }
-
-
 
   &::before {
     margin-bottom: 16px;
@@ -106,7 +102,6 @@
 }
 
 .advantages-list__item-text {
-  
   font-family: var(--text-first);
   font-style: normal;
   font-weight: bold;
