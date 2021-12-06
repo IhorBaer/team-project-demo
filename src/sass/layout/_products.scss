@@ -15,14 +15,10 @@
 
 // container
 .container-products {
+  min-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-right: auto;
-  margin-left: auto;
-
-  @media screen and (max-width: 479px) {
-    max-width: 320px;
-  }
+  margin: 0 auto;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -436,6 +432,7 @@
 
 .recipe__lable {
   margin-bottom: 4px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
