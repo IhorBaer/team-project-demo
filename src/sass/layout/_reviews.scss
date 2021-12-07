@@ -1,0 +1,13 @@
+.section-reviews {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-color: royalblue;
+}
+
+.container.container-reviews {
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 137px;
+    padding-right: 137px;
+  }
+}
