@@ -14,22 +14,7 @@
 }
 
 // container
-.container-products {
-  min-width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 34px;
-    padding-right: 34px;
-  }
-
+.container.container-products {
   @media screen and (min-width: 1200px) {
     width: 1200px;
     padding-left: 75px;
@@ -386,6 +371,7 @@
 
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
+  color: #505050;
 
   position: absolute;
   z-index: 37;
@@ -428,6 +414,18 @@
     margin-bottom: 15px;
     font-size: 18px;
   }
+}
+
+.recipe__title--color-ice-cream {
+  color: var(--accent-color);
+}
+
+.recipe__title--color-ice-coffee {
+  color: #7a4d0e;
+}
+
+.recipe__title--color-milkshakes {
+  color: #538a0d;
 }
 
 .recipe__lable {
