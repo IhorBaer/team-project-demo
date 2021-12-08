@@ -9,18 +9,18 @@
   z-index: 50;
   padding-top: 6px;
   padding-bottom: 6px;
- /*  background: var(--background-pink); */
+  background: rgba(255, 184, 202, 0.3);
   
    
   @media screen and (min-width: 768px) {
-    padding-top: 37px;
-    padding-bottom: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
-  /* @media screen and (min-width: 1200px) {
-    padding-top: 37px;
-    padding-bottom: 0;
-  }  */
+  @media screen and (min-width: 1200px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }  
 }
 
 .header-container {
