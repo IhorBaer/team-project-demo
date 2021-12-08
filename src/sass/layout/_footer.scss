@@ -1,28 +1,16 @@
 .footer {
     background: var(--background-section);
-    padding-bottom: 25px;
-    @media screen and (min-width: 768px) {
-        padding-bottom: 18px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 10px;
-    }
 }
 .footer__wrapper {
     padding-bottom: 43px;
-    margin-bottom: 22px;
-    border-bottom: 1px solid var(--line-contacts);
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
         padding-bottom: 91px;
-        margin-bottom: 29px;
     }
     @media screen and (min-width: 1200px) {
         padding-bottom: 97px;
-        margin-bottom: 9px;
     }
-    
 }
 .footer__label {
     font-family: var(--text-secondary);
@@ -42,7 +30,6 @@
         font-size: 30px;
         line-height: 1.13;
         width: 500px;
-        
     }
 }
 .footer__span {
@@ -64,7 +51,6 @@
         line-height: 1.14;
         letter-spacing: 0.06em;
         width: 100%;
-        
     }
 }
 .social-list {
@@ -96,7 +82,6 @@
     &:focus {
         background-color: var(--accent-color) ;
     }
-
 }
 .footer__adress {
     font-weight: bold;
@@ -105,18 +90,25 @@
     letter-spacing: 0.02em;
     color: var(--text-color-black);
     text-align: end;
-    margin-bottom: 65px;
     @media screen and (min-width: 768px) {
         font-size: 14px;
-        margin-bottom: 0;
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
     }
-    
 }
 .footer__tel {
     color: var(--accent-color);
+}
+.footer__copy {
+    border-top: 1px solid var(--line-contacts);
+    padding: 22px 0 25px 0;
+    @media screen and (min-width: 768px) {
+        padding: 29px 0 18px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 9px 0 10px 0;
+    }
 }
 .footer__text {
     font-weight: bold;
