@@ -16,7 +16,7 @@
   }
 }
 
-.reviews__item {
+.reviews {
   position: relative;
 }
 
@@ -158,11 +158,15 @@
 }
 
 .slick-next {
-  right: 0;
+  @media screen and (max-width: 767px) {
+    right: 0;
+  }
 }
 .slick-prev {
-  left: 0;
-  z-index: 2;
+  @media screen and (max-width: 767px) {
+    left: 0;
+    z-index: 2;
+  }
 }
 
 .slick-dots li.slick-active button:before {
