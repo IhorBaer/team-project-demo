@@ -7,6 +7,13 @@
   );
 }
 
+.scale {
+  transition: 1s; /* Время эффекта */
+}
+.scale:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
 .item_container {
   margin-left: 5%;
 
@@ -22,6 +29,7 @@
 .item {
   display: block;
   width: 15%;
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     width: 17%;
@@ -38,7 +46,8 @@
 
 .item img {
   max-width: 100%;
-  border-radius: 25px;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 .stamp {
