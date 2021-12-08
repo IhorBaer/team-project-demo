@@ -16,7 +16,7 @@
   }
 }
 
-.reviews__item {
+.reviews {
   position: relative;
 }
 
@@ -152,6 +152,22 @@
 }
 
 // slider
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-next {
+  @media screen and (max-width: 767px) {
+    right: 0;
+  }
+}
+.slick-prev {
+  @media screen and (max-width: 767px) {
+    left: 0;
+    z-index: 2;
+  }
+}
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
