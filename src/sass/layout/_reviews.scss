@@ -1,6 +1,5 @@
 .section-reviews {
   padding-top: 120px;
-  padding-bottom: 80px;
 }
 
 .container.container-reviews {
@@ -15,6 +14,10 @@
     padding-left: 137px;
     padding-right: 137px;
   }
+}
+
+.reviews__item {
+  position: relative;
 }
 
 .reviews__picture-container {
@@ -32,17 +35,17 @@
 }
 
 .reviews__comment {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding: 40px 50px 20px;
   background-color: #fafafa;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     padding: 30px 38px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding: 32px 50px;
   }
 }
@@ -72,7 +75,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    line-height: 1.86;
+    line-height: 1.88;
   }
 }
 
@@ -116,20 +119,6 @@
   }
 }
 
-// .reviews__lable::before {
-//   content: '•••';
-//   display: block;
-//   margin: 0 auto 15px;
-
-//   width: 50px;
-//   height: 4px;
-//   color: var(--accent-color);
-
-//   font-size: 20px;
-//   line-height: 0%;
-//   letter-spacing: 0.5em;
-// }
-
 .slider__markeкs {
   display: flex;
   justify-content: center;
@@ -160,4 +149,65 @@
   &:not(:last-child) {
     margin-right: 18px;
   }
+}
+
+// slider
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--accent-color);
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 5px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: '•';
+  text-align: center;
+
+  opacity: 0.5;
+  color: var(--accent-color);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 80px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: var(--accent-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
