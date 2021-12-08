@@ -143,6 +143,7 @@
 .hiro-comment-input {
   background-color: var(--background-menu);
   outline: none;
+  cursor: pointer;
   margin-top: 4px;
   width: 100%;
   min-height: 120px;
@@ -183,6 +184,7 @@
 }
 
 .check {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
