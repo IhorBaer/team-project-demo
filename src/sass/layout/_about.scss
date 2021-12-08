@@ -1,3 +1,26 @@
+.container__about {
+    min-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  
+    @media screen and (min-width: 480px) {
+      width: 480px;
+  
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      padding-left: 34px;
+      padding-right: 34px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1283px;
+      padding-left: 112px;
+      padding-right: 117px;
+    }
+  }
 .section__about {
     position: relative;
     background: #fff5f6;
@@ -69,10 +92,6 @@ color: #D41443;
     display: block;
     height: auto;
     margin: 0;
-    @media screen and (min-width: 1280px) {
-        height: 513px;
-        width: 513px;
-    }
 }
 .about__list {
     margin: 0;
