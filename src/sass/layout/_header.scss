@@ -73,6 +73,7 @@
 }
 
 .header-btn {
+  cursor: pointer;
   background: var(--primary-white-color);
   border-radius: 22px;
   border: none;
@@ -102,8 +103,6 @@
   &:focus {
     background: var(--button-gray);
   }
-
- /*  @media screen and (max-width: 1199px) {} */
 }
 
 .burger-btn {
@@ -137,7 +136,7 @@
   z-index: 999;
   top: 0;
   right: 0;
-  width: 100vw;
+  width: 254px;
   height: 100vh;
   padding-top: 60px;
   background-color: var(--background-menu);  
@@ -146,10 +145,6 @@
 
   &.is-open {   
     transform: translateX(0%); 
-
-    @media screen and (min-width: 480px) {
-      width: 254px;
-    }
 
     @media screen and (min-width: 1200px) {
       display: none;
@@ -188,6 +183,7 @@
 }
 
 .mobile-btn {
+  cursor: pointer;
   background: var(--primary-white-color);
   border-radius: 22px;
   border: none;
