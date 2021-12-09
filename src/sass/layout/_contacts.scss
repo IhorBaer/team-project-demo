@@ -59,7 +59,6 @@
 }
 
 .contacts-list__item {
-  width: 220px;
   margin-right: auto;
   margin-left: auto;
 
@@ -75,6 +74,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media screen and (max-width: 1199px) {
+    width: 220px;
+  }
   @media screen and (min-width: 768px) {
     margin-left: 20px;
     margin-bottom: 0;
@@ -84,7 +87,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 330px;
     margin-left: 30px;
     flex-basis: calc((100% - 3 * 30px) / 3);
     font-size: 16px;
