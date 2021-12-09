@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openContactsBtn: document.querySelector('[contacts-modal-open]'),
-    closeContactsBtn: document.querySelector('[contacts-modal-close]'),
-    contactsModal: document.querySelector('[contacts-modal]'),
+    openContactsBtn: document.querySelector('[data-contacts-modal-open]'),
+    closeContactsBtn: document.querySelector('[data-contacts-modal-close]'),
+    contactsModal: document.querySelector('[data-contacts-modal]'),
   };
 
   refs.openContactsBtn.addEventListener('click', toggleModal);
